@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Custom Layout Page</title>
+<style>
+  @font-face {
+    font-family: 'Sclavorum';
+    src: url('sclavorum.otf') format('opentype');
+  }
+
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Sclavorum', sans-serif;
+    color: #000000;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logo-bar a {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .logo-bar img {
+    height: 80px;
+    width: 80px;
+  }
+  
+  .divider-bar {
+    background-color: #262626;
+    height: 1px;
+    width: 900px;
+    margin-top: 20px;
+  }
+  
+  .navigation {
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    font-size: 20px;
+  }
+  
+  .navigation a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  .main-content {
+    width: 900px;
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+  }
+  
+  .left-content {
+    flex: 2;
+    padding: 10px;
+    text-align: left;
+    font-size: 21px;
+  }
+  
+  .right-content {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .header {
+    margin-bottom: 20px;
+    color: #000000;
+    padding: 10px;
+    font-size: 25px;
+  }
+  
+  .text-section {
+    margin-bottom: 20px;
+    color: #000000;
+    padding: 10px;
+  }
+  
+  .image-container {
+    margin-bottom: 20px;
+  }
+
+  .right-content img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .image-description {
+    font-size: 21px;
+  }
+  
+  em {
+    font-style: italic;
+  }
+</style>
+</head>
+<body>
+
+<div class="logo-bar">
+  <a href="/">
+    <img src="https://static.wixstatic.com/media/e5d91e_8ea3709b3ef34b9e891e1ad072e06ab8~mv2.png/v1/fill/w_100,h_100,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/343744.png" alt="Logo">
+  </a>
+</div>
+<div class="divider-bar"></div>
+
+<div class="navigation">
+  <a href="#main">ГЛОВНОЕ</a>
+  <a href="#news">ДѢИНЫ</a>
+  <a href="#prayers">МОДЛИТВЫ</a>
+</div>
+
+<div class="main-content">
+  <div class="left-content">
+    <div class="header">СЛОВѢНЬЩИНА</div>
+    <div class="text-section">
+      <strong>ВѢРА ВЪ Б<span style="color: #E21C21;">О</span>ГА</strong> <em>И ЕДНОСТЬ СЛОВѢНЪ</em>
+    </div>
+  </div>
+  <div class="right-content">
+    <div class="image-container">
+      <img src="https://static.wixstatic.com/media/e5d91e_448cfea21b4e41b29d795721b62c358f~mv2.jpg/v1/fill/w_385,h_281,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Neuri.jpg" alt="Related Image">
+      <div class="image-description">
+        Терены Балтѡвъ, въ томъ Словѣнъ въ IV вѣку пр. н. л.
+      </div>
+    </div>
+    <div class="image-container">
+      <img src="https://static.wixstatic.com/media/e5d91e_4843ee4c27374e27b6de23d7c2730599~mv2.png/v1/fill/w_383,h_281,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/e5d91e_4843ee4c27374e27b6de23d7c2730599~mv2.png" alt="Second Related Image">
+      <div class="image-description">
+        Терены Словѣнъ, чѧстъчнѣ Вѧтѡвъ и Ѫтѡвъ въ IV вѣку н. л.
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
