@@ -53,28 +53,27 @@
   }
   
   .main-content {
-    width: 900px;
+    width: 100%; /* Pełna szerokość */
+    max-width: 1200px; /* Maksymalna szerokość kontenera */
     display: flex;
-    margin-top: 20px;
-    gap: 20px;
+    justify-content: space-between;
+    padding: 0 20px; /* Dodano padding do wycentrowania treści */
+    box-sizing: border-box; /* Zapewnia, że padding nie wpływa na szerokość */
   }
   
   .left-content {
-    flex: 2;
-    padding: 10px;
-    text-align: left;
-    font-size: 21px;
+    width: 60%; /* Szerokość lewej kolumny */
+    padding-right: 20px; /* Dodano odstęp od prawej kolumny */
   }
   
   .right-content {
-    flex: 1;
-    text-align: center;
+    width: 40%; /* Szerokość prawej kolumny */
+    padding-left: 20px; /* Dodano odstęp od lewej kolumny */
   }
   
   .header {
     margin-bottom: 20px;
     color: #000000;
-    padding: 10px;
     font-size: 25px;
     text-align: justify;
   }
@@ -82,19 +81,22 @@
   .text-section {
     margin-bottom: 20px;
     color: #000000;
-    padding: 10px;
     font-size: 18px;
     text-align: justify;
   }
   
+  .image-container:first-of-type {
+    margin-top: 50px; /* Pierwszy obrazek zaczyna się niżej */
+  }
+
   .image-container {
-    margin-top: 50px;
+    margin-top: 20px; /* Odstęp między obrazkami */
   }
 
   .right-content img {
     max-width: 100%;
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Odstęp między obrazkiem a jego opisem */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
   
