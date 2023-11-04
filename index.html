@@ -34,16 +34,16 @@
   .divider-bar {
     background-color: #262626;
     height: 1px;
-    width: 900px;
-    margin-top: 20px;
+    width: 100%; /* Dostosowano do pełnej szerokości */
+    margin: 20px 0;
   }
   
   .navigation {
-    width: 900px;
     display: flex;
     justify-content: center;
     padding: 10px 0;
     font-size: 20px;
+    width: 100%;
   }
   
   .navigation a {
@@ -53,32 +53,34 @@
   }
   
   .main-content {
-    width: 900px;
     display: flex;
-    margin-top: 20px;
-    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
   }
   
   .left-content {
-    width: 60%;
-    text-align: justify;
+    width: calc(70% - 20px); /* Zwiększono szerokość lewego bloku */
   }
   
   .right-content {
-    width: 40%;
-    text-align: center;
+    width: calc(30% - 20px); /* Zmniejszono szerokość prawego bloku */
+    margin-top: 60px; /* Opuściłem prawy blok */
   }
   
   .header {
     margin-bottom: 20px;
     color: #000000;
     font-size: 25px;
+    text-align: justify;
   }
   
   .text-section {
     margin-bottom: 20px;
     color: #000000;
     font-size: 18px;
+    text-align: justify;
   }
   
   .image-container {
@@ -86,15 +88,17 @@
   }
 
   .image-container img {
-    width: 100%; /* Otwiera obrazki na pełną szerokość kontenera */
+    width: 100%;
     height: auto;
-    cursor: pointer; /* Pokazuje, że można kliknąć na obrazek */
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
   }
   
   .image-description {
-    margin-top: 20px; /* Odstęp pomiędzy obrazkiem a opisem */
     font-size: 18px;
     font-style: italic;
+    margin-top: 20px;
   }
   
 </style>
@@ -126,16 +130,16 @@
   <div class="right-content">
     <a href="img/img1.png" target="_blank" class="image-container">
       <img src="img/img1.png" alt="Related Image">
-      <div class="image-description">
-        Терены Балтѡвъ, въ томъ Словѣнъ въ IV вѣку пр. н. л.
-      </div>
     </a>
+    <div class="image-description">
+      Терены Балтѡвъ, въ томъ Словѣнъ въ IV вѣку пр. н. л.
+    </div>
     <a href="img/img2.png" target="_blank" class="image-container">
       <img src="img/img2.png" alt="Second Related Image">
-      <div class="image-description">
-        Терены Словѣнъ, чѧстъчнѣ Вѧтѡвъ и Ѫтѡвъ въ IV вѣку н. л.
-      </div>
     </a>
+    <div class="image-description">
+      Терены Словѣнъ, чѧстъчнѣ Вѧтѡвъ и Ѫтѡвъ въ IV вѣку н. л.
+    </div>
   </div>
 </div>
 
