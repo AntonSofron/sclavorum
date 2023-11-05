@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Custom Layout Page</title>
+<style>
+  @font-face {
+    font-family: 'Sclavorum';
+    src: url('sclavorum.otf') format('opentype');
+  }
+
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Sclavorum', sans-serif;
+    color: #000000;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logo-bar a {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .logo-bar img {
+    height: 80px;
+    width: 80px;
+  }
+  
+  .divider-bar {
+    background-color: #262626;
+    height: 1px;
+    width: 900px;
+    margin-top: 20px;
+  }
+  
+  .navigation {
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    font-size: 20px;
+  }
+  
+  .navigation a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  .main-content {
+    width: 900px;
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+  }
+  
+  .left-content {
+    flex: 2;
+    padding: 10px;
+    text-align: left;
+    font-size: 21px;
+  }
+  
+  .header {
+    margin-bottom: 20px;
+    color: #000000;
+    padding: 10px;
+    font-size: 25px;
+    text-align: justify;
+  }
+  
+  .text-section {
+    margin-bottom: 20px;
+    color: #000000;
+    padding: 10px;
+    font-size: 18px;
+    text-align: justify;
+  }
+  
+  .image-container {
+    margin-bottom: 20px;
+  }
+
+  .right-content img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .image-description {
+    padding: 10px;
+    font-size: 18px;
+    font-style: italic;
+  }
+  
+</style>
+</head>
+<body>
+
+<div class="logo-bar">
+  <a href="glovnoe.html">
+    <img src="img/logo.png" alt="Logo">
+  </a>
+</div>
+<div class="divider-bar"></div>
+
+<div class="navigation">
+  <a href="glovnoe.html">ГЛОВНОЕ</a>
+  <a href="slovnik.html">СЛОВНИКЪ</a>
+  <a href="deiny.html">ДѢИНЫ</a>
+  <a href="modlitvy.html">МОДЛИТВЫ</a>
+</div>
+
+<div class="main-content">
+  <div class="left-content">
+    <div class="header">
+      <strong style="color: #E21C21;">⁘</strong>СЛОВНИКЪ СВѦТУЮ МЕѲОДІУША И КѴРІЛЛА<strong style="color: #E21C21;">⁘</strong>
+    </div>
+    <div class="text-section">
+		<strong><font style="color: #E21C21;">Аа Яя</font> <font style="color: #11467F;">Бб Вв Гг Ґґ Дд Ђђ</font> <font style="color: #E21C21;">Ее Ээ</font> <font style="color: #11467F;">Жж Ѕѕ Зз</font> <font style="color: #E21C21;">Ии</font> <font style="color: #11467F;">Йй Ѳѳ</font> <font style="color: #E21C21;">Іі</font> <font style="color: #11467F;">Кк Лл Мм Нн Ѯѯ</font> <font style="color: #E21C21;">Оо</font> <font style="color: #11467F;">Пп Цц Чч Рр Сс Шш Щщ Тт Ћћ</font> <font style="color: #E21C21;">Ѵѵ Уу Юю</font> <font style="color: #11467F;">Фф Хх Ѱѱ</font> <font style="color: #E21C21;">Ѡѡ Ъъ Ыы Ьь Ѣѣ Ѧѧ Ѫѫ Ѭѭ</font></strong><br><br>
+		
+		<font style="color: #E21C21;">А</font> /<font style="color: #11467F;">А</font>/<br>русщина <em>А</em>; бѣлорусщина <em>А</em>; украиньщина <em>А</em>; польщина <em>A</em>; чешщина <em>(1)A, (2)ALE/AVŠAK</em><br>
+		
+		<font style="color: #E21C21;">АБАЖУРНЫЙ</font> /<font style="color: #11467F;">АБ</font>-<font style="color: #E21C21;">АЖУР</font>-<font style="color: #11467F;">Н</font>-<font style="color: #11467F;">ЫЙ</font>/<br>✝среднесловѣньщина <em>СТѢНИДЪЛЬНЫЙ</em><br>
+		
+		<font style="color: #E21C21;">АБАЖУРЪ</font> /<font style="color: #11467F;">АБ</font>-<font style="color: #E21C21;">АЖУР</font>-<font style="color: #11467F;">Ъ</font>/<br>✝среднесловѣньщина <em>СТѢНИДЛО</em><br>
+		
+		<font style="color: #E21C21;">АБАКЪ</font> /<font style="color: #E21C21;">АБАК</font>-<font style="color: #11467F;">Ъ</font>/<br>✝среднесловѣньщина <em>ЛИЧИДЛО</em><br>
+		
+		<font style="color: #E21C21;">АБДІКАЦІА</font> /<font style="color: #11467F;">АБ</font>-<font style="color: #E21C21;">ДІК</font>-[<font style="color: #E21C21;">АЦ</font>]-<font style="color: #E21C21;">ІА</font>/<br>✝среднесловѣньщина <em>ѠТСТѪПЪ</em><br>
+		
+		<font style="color: #E21C21;">АБДІЦИРОВАТЬ</font> /<font style="color: #11467F;">АБ</font>-<font style="color: #E21C21;">ДІЦ</font>-[<font style="color: #E21C21;">ИР</font>]-<font style="color: #11467F;">ОВ</font>-<font style="color: #E21C21;">А</font>-<font style="color: #11467F;">ТЬ</font>/<br>✝среднесловѣньщина <em>ѠТСТѪПИТЬ</em><br>
+		
+		<font style="color: #E21C21;">АБЛАТІВЪ</font> /<font style="color: #11467F;">АБ</font>-<font style="color: #E21C21;">ЛАТ</font>-[<font style="color: #E21C21;">ІВ</font>]-<font style="color: #11467F;">Ъ</font>/<br>✝среднесловѣньщина <em>ИЗХОДНИКЪ</em><br>
+		
+		<font style="color: #E21C21;">АБОЛІЦІѠНІСМЪ</font> /<font style="color: #11467F;">АБ</font>-<font style="color: #E21C21;">ОЛІЦ</font>-[<font style="color: #E21C21;">ІѠН</font>]-[<font style="color: #E21C21;">ІСМ</font>]-<font style="color: #11467F;">Ъ</font>/<br>русщина <em>АБОЛИЦИОНИЗМ</em>; бѣлорусщина <em>АБАЛІЦЫЯНІЗМ</em>; украиньщина <em>АБОЛІЦІОНІЗМ</em>; польщина <em>ABOLICJONIZM</em>; чешщина <em>ABOLICIONISMUS</em><br>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
